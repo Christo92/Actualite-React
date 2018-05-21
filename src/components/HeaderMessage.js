@@ -1,7 +1,7 @@
-import React, { Component } from 'react';
+import React from 'react';
 
 const HeaderMessage = (props) => {
-        const { auteur, dataPublication } = props;
+        const { auteur } = props;
 
         return (
             <div className="HeaderMessage">
