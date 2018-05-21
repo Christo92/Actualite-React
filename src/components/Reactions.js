@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { reactionEmojis } from '../actualites';
 import classNames from 'classnames';
-
+import uniqid from 'uniqid';
 class Reactions extends Component {
 
     constructor(props){
@@ -21,7 +21,8 @@ class Reactions extends Component {
         }
 
         return (
-            <div 
+            <div
+            key={uniqid()}
             className={classNames(
                 'Reactions__reaction',
                 { 'Reactions__reaction--selected' : isSelectionReaction } 

@@ -7,9 +7,6 @@ import ListeCommentaires from './ListeCommentaires';
 class Actualite extends Component {
     render() {
         const { auteur, dataPublication, message, reactions, commentaires } = this.props.actualite;
-
-        console.log(this.props)
-
         return (
             <div className="Actualite">
                 <HeaderMessage auteur={ auteur } dataPublication={ dataPublication } />
